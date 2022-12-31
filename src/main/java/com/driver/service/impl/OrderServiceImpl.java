@@ -23,6 +23,7 @@ public class OrderServiceImpl implements OrderService {
     public OrderDto createOrder(OrderDto order) {
         OrderEntity orderEntity = new OrderEntity();
         BeanUtils.copyProperties(order,orderEntity);
+        orderEntity.setStatus(true);
         orderRepository.save(orderEntity);
         return order;
     }
