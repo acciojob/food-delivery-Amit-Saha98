@@ -1,6 +1,10 @@
 package com.driver.shared.dto;
 
+import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
+import lombok.Builder;
+
 import java.io.Serializable;
+
 
 public class FoodDto{
 

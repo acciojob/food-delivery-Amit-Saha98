@@ -1,8 +1,17 @@
 package com.driver.model.response;
 
+import lombok.ToString;
+
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+
+@ToString
 public class OperationStatusModel {
 
+	@Enumerated(EnumType.STRING)
 	private String operationResult;
+
+	@Enumerated(EnumType.STRING)
 	private String operationName;
 	public String getOperationResult() {
 		return operationResult;
